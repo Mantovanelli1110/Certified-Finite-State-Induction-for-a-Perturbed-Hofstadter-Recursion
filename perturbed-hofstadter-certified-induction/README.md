@@ -347,12 +347,14 @@ factor_count_mismatch=0
 
 Expected diagnostic output:
 
+```text
 matched_S_words=1
 unmatched=27
 symbol_bad_total=0
 
 RESULT: 4-STEP CYCLE COMPOSITION PATTERN FAILED
 The expansion lands inside the S alphabet, but not always on an existing S-word.
+```
 
 ### Cycle composition factor checker
 
