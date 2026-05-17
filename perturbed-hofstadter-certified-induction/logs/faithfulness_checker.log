@@ -1,0 +1,23 @@
+﻿Faithfulness checker
+certificate=certificate.txt
+
+Faithfulness certificate:
+words_header=13
+words_checked=13
+contexts_header=2923
+contexts_checked=2923
+extensions_header=3026
+extensions_checked=3026
+realizations_header=4735941
+realizations_checked=4735941
+arithmetic_records_checked=49999571
+malformed_bad=0
+word_bad=0
+context_bad=0
+extension_bad=0
+extension_missing_bad=0
+realization_bad=0
+record_bad=0
+header_bad=0
+
+RESULT: FAITHFULNESS CERTIFICATE VERIFIED

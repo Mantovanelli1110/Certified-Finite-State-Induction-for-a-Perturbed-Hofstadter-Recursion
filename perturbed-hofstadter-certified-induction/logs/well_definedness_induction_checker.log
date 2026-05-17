@@ -1,0 +1,26 @@
+﻿Well-definedness induction checker
+certificate=certificate.txt
+
+Arithmetic / backwardness / parity certificate:
+words_header=13
+words_checked=13
+contexts_header=2923
+contexts_checked=2923
+extensions_header=3026
+extensions_checked=3026
+realizations_header=4735941
+realizations_checked=4735941
+arithmetic_records_checked=49999571
+min_rel_seen=-2441147
+max_rel_seen=-10
+min_target_seen=0
+max_target_seen=39
+min_global_target_seen=290
+max_global_target_seen=49999860
+arithmetic_bad=0
+non_backward_bad=0
+parity_bad=0
+malformed_bad=0
+header_bad=0
+
+RESULT: WELL-DEFINEDNESS INDUCTION CERTIFICATE VERIFIED

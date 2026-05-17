@@ -1,0 +1,72 @@
+﻿Parsed cycle certificates:
+S_count=53
+T_count=46
+U_count=38
+V_count=28
+K=28
+final_limit=53
+
+V0 composed_len=511 max_symbol=35 hash=19b7b4866b096e0b NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 11 1 4 1 1 1 4 1 1 1 1 1 4 1 1 1 1 4 1 1 4 11 1 4 1 1 1 4 1 1 4 11 1 4 12 11 ...
+V1 composed_len=1 max_symbol=1 hash=39fb6fd46185c525 MATCHES S1
+V2 composed_len=1013 max_symbol=39 hash=dda9a7afc8696bb2 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 4 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 ...
+V3 composed_len=9 max_symbol=3 hash=d366791223f63d7f NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 3
+V4 composed_len=9 max_symbol=4 hash=d366781223f63bcc NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4
+V5 composed_len=1981 max_symbol=42 hash=079ced4a2f02ddb3 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 11 1 4 1 1 1 4 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 ...
+V6 composed_len=45 max_symbol=6 hash=3c82b330f21c673e NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 3 1 1 3 6 1 3 1 1 1 3 1 1 1 1 1 3 1 1 1 1 1 1 1 3
+V7 composed_len=45 max_symbol=7 hash=f07dec584c13824f NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 4 1 1 1 1 4 1 1 1 1 1 1 4
+V8 composed_len=3797 max_symbol=43 hash=6eea35a2d7a0f9c2 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 4 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 ...
+V9 composed_len=165 max_symbol=10 hash=e77de16c7c5c2d1d NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 1 3 1 1 1 1 1 3 1 1 1 3 1 10 3 1 1 3 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 1 3 1 1 1 3 1 10 3 1 1 ...
+V10 composed_len=45 max_symbol=10 hash=f7c029157a106862 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 1 3 1 1 1 1 1 3 1 1 1 3 1 10 3 1 1 3 1 1 1 1 3 1 1 1 1 1 1 3
+V11 composed_len=45 max_symbol=11 hash=e8648d1dc2bf0b4b NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 11 1 4 1 1 1 4 1 1 1 1 1 4 1 1 1 1 1 1 1 4
+V12 composed_len=165 max_symbol=12 hash=ecfc77d632d25de0 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 11 1 4 1 1 1 4 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 ...
+V13 composed_len=7099 max_symbol=42 hash=df050776cb1a0ff5 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 11 1 4 1 1 1 4 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 ...
+V14 composed_len=495 max_symbol=15 hash=6358e905804f65de NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 3 1 1 3 6 1 3 1 1 1 3 1 1 1 1 1 3 1 1 1 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 3 1 1 3 ...
+V15 composed_len=165 max_symbol=15 hash=7fa6929b2fd86d7b NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 3 1 1 3 6 1 3 1 1 1 3 1 1 1 1 1 3 1 1 1 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 3 1 1 3 ...
+V16 composed_len=165 max_symbol=16 hash=41fc79b723fe768c NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 4 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 ...
+V17 composed_len=495 max_symbol=17 hash=38c0d80c972fe56b NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 4 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 ...
+V18 composed_len=12911 max_symbol=43 hash=6b8b2b7b19b3d300 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 4 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 ...
+V19 composed_len=1287 max_symbol=20 hash=f91af09ac35b1bc3 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 1 3 1 1 1 1 1 3 1 1 1 3 1 10 3 1 1 3 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 1 3 1 1 1 3 1 10 3 1 1 ...
+V20 composed_len=495 max_symbol=20 hash=b7831a4dcfd10f24 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 1 3 1 1 1 1 1 3 1 1 1 3 1 10 3 1 1 3 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 1 3 1 1 1 3 1 10 3 1 1 ...
+V21 composed_len=495 max_symbol=21 hash=1d0e5f5051806ee3 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 11 1 4 1 1 1 4 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 ...
+V22 composed_len=1287 max_symbol=22 hash=24cdf45d2af72bd2 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 11 1 4 1 1 1 4 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 ...
+V23 composed_len=22819 max_symbol=42 hash=01890c83024c33c7 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 11 1 4 1 1 1 4 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 4 1 1 4 ...
+V24 composed_len=3003 max_symbol=25 hash=1dd9779abfc395fa NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 3 1 1 3 6 1 3 1 1 1 3 1 1 1 1 1 3 1 1 1 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 3 1 1 3 ...
+V25 composed_len=1287 max_symbol=25 hash=4deec60b6fadfb7d NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 3 1 1 3 6 1 3 1 1 1 3 1 1 1 1 1 3 1 1 1 1 1 1 1 3 1 1 1 1 1 1 3 1 1 1 1 3 1 1 3 ...
+V26 composed_len=1287 max_symbol=26 hash=5fc7a5f8c6e1082e NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 4 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 ...
+V27 composed_len=3003 max_symbol=27 hash=ff6d1bebf0e47465 NO_S_WORD_MATCH
+prefix: 1 1 1 1 1 1 1 1 4 1 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 4 1 1 1 1 4 1 1 1 1 1 1 4 1 1 1 1 1 4 1 1 1 4 1 7 4 1 1 ...
+
+RESULT SUMMARY:
+checked_words=28
+symbol_bad_total=0
+matched_S_words=1
+unmatched=27
+
+RESULT: 4-STEP CYCLE COMPOSITION PATTERN FAILED
+The expansion lands inside the S alphabet, but not always on an existing S-word.

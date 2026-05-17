@@ -1,0 +1,88 @@
+﻿Symbolic coverage-anchor checker
+S=s_certificate.txt
+T=t_certificate.txt
+U=u_certificate.txt
+V=v_certificate.txt
+K=28
+
+Parsed word certificates:
+S certificate: file=s_certificate.txt
+  header_count=53
+  parsed_count=53
+  parsed_words=53
+T certificate: file=t_certificate.txt
+  header_count=46
+  parsed_count=46
+  parsed_words=46
+U certificate: file=u_certificate.txt
+  header_count=38
+  parsed_count=38
+  parsed_words=38
+V certificate: file=v_certificate.txt
+  header_count=28
+  parsed_count=28
+  parsed_words=28
+
+Symbol bound checks:
+S over S bad=0
+T over S bad=0
+U over T bad=0
+V over U bad=0
+
+Stable prefix check:
+K=28
+prefix_bad=0
+stable_prefix=OK
+
+Full composition and factorization:
+V0 raw_len=511 factor_count=127 natural_factor_count=127 hash=8069abd90c610ee7 status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 S4 S11 S1 S4 S1 S1 S1 S4 S1 S1 S4 S11 S1 S4 S12 S11 ...
+V1 raw_len=1 factor_count=1 natural_factor_count=1 hash=df95b54c489c67e9 status=OK prefix: S1
+V2 raw_len=1013 factor_count=247 natural_factor_count=247 hash=6db464c0714923d0 status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 S1 S4 S1 S7 S4 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 ...
+V3 raw_len=9 factor_count=7 natural_factor_count=7 hash=98e4713d0411f15f status=OK prefix: S1 S1 S1 S1 S1 S1 S3
+V4 raw_len=9 factor_count=7 natural_factor_count=7 hash=98cc673d03fd4e80 status=OK prefix: S1 S1 S1 S1 S1 S1 S4
+V5 raw_len=1981 factor_count=466 natural_factor_count=466 hash=982523771654c085 status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 S4 S11 S1 S4 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 ...
+V6 raw_len=45 factor_count=28 natural_factor_count=28 hash=43bdccb9e10aef9e status=OK prefix: S1 S1 S1 S1 S1 S1 S3 S1 S1 S1 S1 S3 S1 S1 S3 S6 S1 S3 S1 S1 S1 S3 S1 S1 S1 S1 S1 S3
+V7 raw_len=45 factor_count=28 natural_factor_count=28 hash=1e64c9290d8b51cb status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 S1 S4 S1 S7 S4 S1 S1 S4 S1 S1 S1 S1 S4
+V8 raw_len=3797 factor_count=848 natural_factor_count=848 hash=e9b5cc49f54f0010 status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 S1 S4 S1 S7 S4 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 ...
+V9 raw_len=165 factor_count=84 natural_factor_count=84 hash=22681781cef5ce41 status=OK prefix: S1 S1 S1 S1 S1 S1 S3 S1 S1 S1 S1 S1 S3 S1 S1 S1 S3 S1 S10 S3 S1 S1 S3 S1 S1 S1 S1 S3 S1 S1 ...
+V10 raw_len=45 factor_count=28 natural_factor_count=28 hash=8e95f32b5286fc1a status=OK prefix: S1 S1 S1 S1 S1 S1 S3 S1 S1 S1 S1 S1 S3 S1 S1 S1 S3 S1 S10 S3 S1 S1 S3 S1 S1 S1 S1 S3
+V11 raw_len=45 factor_count=28 natural_factor_count=28 hash=88be40927accf5d7 status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 S4 S11 S1 S4 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4
+V12 raw_len=165 factor_count=84 natural_factor_count=84 hash=aca7ee224e78f1d8 status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 S4 S11 S1 S4 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 ...
+V13 raw_len=7099 factor_count=1486 natural_factor_count=1486 hash=d662c5e2cdda72a7 status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 S4 S11 S1 S4 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 ...
+V14 raw_len=495 factor_count=210 natural_factor_count=210 hash=508be4fffbeedc6e status=OK prefix: S1 S1 S1 S1 S1 S1 S3 S1 S1 S1 S1 S3 S1 S1 S3 S6 S1 S3 S1 S1 S1 S3 S1 S1 S1 S1 S1 S3 S1 S1 ...
+V15 raw_len=165 factor_count=84 natural_factor_count=84 hash=348d1f4362ef1743 status=OK prefix: S1 S1 S1 S1 S1 S1 S3 S1 S1 S1 S1 S3 S1 S1 S3 S6 S1 S3 S1 S1 S1 S3 S1 S1 S1 S1 S1 S3 S1 S1 ...
+V16 raw_len=165 factor_count=84 natural_factor_count=84 hash=f5ecff456cabd82c status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 S1 S4 S1 S7 S4 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 ...
+V17 raw_len=495 factor_count=210 natural_factor_count=210 hash=db9eec28e864e471 status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 S1 S4 S1 S7 S4 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 ...
+V18 raw_len=12911 factor_count=2510 natural_factor_count=2510 hash=eb5bdb570143b32a status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 S1 S4 S1 S7 S4 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 ...
+V19 raw_len=1287 factor_count=462 natural_factor_count=462 hash=6e749e38b1ed3ee7 status=OK prefix: S1 S1 S1 S1 S1 S1 S3 S1 S1 S1 S1 S1 S3 S1 S1 S1 S3 S1 S10 S3 S1 S1 S3 S1 S1 S1 S1 S3 S1 S1 ...
+V20 raw_len=495 factor_count=210 natural_factor_count=210 hash=4bc496c1d68d6100 status=OK prefix: S1 S1 S1 S1 S1 S1 S3 S1 S1 S1 S1 S1 S3 S1 S1 S1 S3 S1 S10 S3 S1 S1 S3 S1 S1 S1 S1 S3 S1 S1 ...
+V21 raw_len=495 factor_count=210 natural_factor_count=210 hash=c7cdc26e0d42435d status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 S4 S11 S1 S4 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 ...
+V22 raw_len=1287 factor_count=462 natural_factor_count=462 hash=d6585b14cd77aed2 status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 S4 S11 S1 S4 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 ...
+V23 raw_len=22819 factor_count=4096 natural_factor_count=4096 hash=a30bd8acce19bf6d status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 S4 S11 S1 S4 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 ...
+V24 raw_len=3003 factor_count=924 natural_factor_count=924 hash=360d18f7e2c79ca0 status=OK prefix: S1 S1 S1 S1 S1 S1 S3 S1 S1 S1 S1 S3 S1 S1 S3 S6 S1 S3 S1 S1 S1 S3 S1 S1 S1 S1 S1 S3 S1 S1 ...
+V25 raw_len=1287 factor_count=462 natural_factor_count=462 hash=2568eb3f7e018d85 status=OK prefix: S1 S1 S1 S1 S1 S1 S3 S1 S1 S1 S1 S3 S1 S1 S3 S6 S1 S3 S1 S1 S1 S3 S1 S1 S1 S1 S1 S3 S1 S1 ...
+V26 raw_len=1287 factor_count=462 natural_factor_count=462 hash=0920239821a8b63e status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 S1 S4 S1 S7 S4 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 ...
+V27 raw_len=3003 factor_count=924 natural_factor_count=924 hash=c525950e3a48b0a7 status=OK prefix: S1 S1 S1 S1 S1 S1 S4 S1 S1 S1 S1 S1 S4 S1 S1 S1 S4 S1 S7 S4 S1 S1 S4 S1 S1 S1 S1 S4 S1 S1 ...
+
+Coverage / factorization summary:
+checked_core_words=28
+symbol_bad=0
+factor_bad=0
+factor_count_mismatch=0
+total_raw_symbols=64124
+total_factors=14779
+total_natural_factors=14779
+max_raw_len=22819
+max_factor_count=4096
+max_natural_factor_count=4096
+max_symbol_seen=43
+
+RESULT SUMMARY:
+symbol_bounds=OK
+stable_prefix=OK
+composition_factorization=OK
+
+RESULT: SYMBOLIC COVERAGE AND ANCHORING VERIFIED
+The stable core V0..V27 matches the corresponding S-patterns.
+Every checked V-word expands through V->U->T->S into raw S-symbols only.
+Every checked raw composed expansion factors into certified S-words.

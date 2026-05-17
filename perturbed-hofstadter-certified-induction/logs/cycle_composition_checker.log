@@ -1,0 +1,72 @@
+﻿Parsed cycle certificates:
+S_count=53
+T_count=46
+U_count=38
+V_count=28
+K=28
+final_limit=53
+
+V0 final_len=511 max_final_symbol=35 bad=0
+V0 composed_len=511 hash=19b7b4866b096e0b status=OK
+V1 final_len=1 max_final_symbol=1 bad=0
+V1 composed_len=1 hash=39fb6fd46185c525 status=OK
+V2 final_len=1013 max_final_symbol=39 bad=0
+V2 composed_len=1013 hash=dda9a7afc8696bb2 status=OK
+V3 final_len=9 max_final_symbol=3 bad=0
+V3 composed_len=9 hash=d366791223f63d7f status=OK
+V4 final_len=9 max_final_symbol=4 bad=0
+V4 composed_len=9 hash=d366781223f63bcc status=OK
+V5 final_len=1981 max_final_symbol=42 bad=0
+V5 composed_len=1981 hash=079ced4a2f02ddb3 status=OK
+V6 final_len=45 max_final_symbol=6 bad=0
+V6 composed_len=45 hash=3c82b330f21c673e status=OK
+V7 final_len=45 max_final_symbol=7 bad=0
+V7 composed_len=45 hash=f07dec584c13824f status=OK
+V8 final_len=3797 max_final_symbol=43 bad=0
+V8 composed_len=3797 hash=6eea35a2d7a0f9c2 status=OK
+V9 final_len=165 max_final_symbol=10 bad=0
+V9 composed_len=165 hash=e77de16c7c5c2d1d status=OK
+V10 final_len=45 max_final_symbol=10 bad=0
+V10 composed_len=45 hash=f7c029157a106862 status=OK
+V11 final_len=45 max_final_symbol=11 bad=0
+V11 composed_len=45 hash=e8648d1dc2bf0b4b status=OK
+V12 final_len=165 max_final_symbol=12 bad=0
+V12 composed_len=165 hash=ecfc77d632d25de0 status=OK
+V13 final_len=7099 max_final_symbol=42 bad=0
+V13 composed_len=7099 hash=df050776cb1a0ff5 status=OK
+V14 final_len=495 max_final_symbol=15 bad=0
+V14 composed_len=495 hash=6358e905804f65de status=OK
+V15 final_len=165 max_final_symbol=15 bad=0
+V15 composed_len=165 hash=7fa6929b2fd86d7b status=OK
+V16 final_len=165 max_final_symbol=16 bad=0
+V16 composed_len=165 hash=41fc79b723fe768c status=OK
+V17 final_len=495 max_final_symbol=17 bad=0
+V17 composed_len=495 hash=38c0d80c972fe56b status=OK
+V18 final_len=12911 max_final_symbol=43 bad=0
+V18 composed_len=12911 hash=6b8b2b7b19b3d300 status=OK
+V19 final_len=1287 max_final_symbol=20 bad=0
+V19 composed_len=1287 hash=f91af09ac35b1bc3 status=OK
+V20 final_len=495 max_final_symbol=20 bad=0
+V20 composed_len=495 hash=b7831a4dcfd10f24 status=OK
+V21 final_len=495 max_final_symbol=21 bad=0
+V21 composed_len=495 hash=1d0e5f5051806ee3 status=OK
+V22 final_len=1287 max_final_symbol=22 bad=0
+V22 composed_len=1287 hash=24cdf45d2af72bd2 status=OK
+V23 final_len=22819 max_final_symbol=42 bad=0
+V23 composed_len=22819 hash=01890c83024c33c7 status=OK
+V24 final_len=3003 max_final_symbol=25 bad=0
+V24 composed_len=3003 hash=1dd9779abfc395fa status=OK
+V25 final_len=1287 max_final_symbol=25 bad=0
+V25 composed_len=1287 hash=4deec60b6fadfb7d status=OK
+V26 final_len=1287 max_final_symbol=26 bad=0
+V26 composed_len=1287 hash=5fc7a5f8c6e1082e status=OK
+V27 final_len=3003 max_final_symbol=27 bad=0
+V27 composed_len=3003 hash=ff6d1bebf0e47465 status=OK
+
+RESULT SUMMARY:
+checked_words=28
+ok_words=28
+total_bad_final_symbols=0
+
+RESULT: 4-STEP CYCLE COMPOSITION SYMBOL-CLOSED
+Every composed V0..V27 expansion lands inside final symbols 0..52.

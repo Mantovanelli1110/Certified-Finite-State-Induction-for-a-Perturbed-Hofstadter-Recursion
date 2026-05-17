@@ -1,0 +1,22 @@
+﻿Trace generator
+N=50000000
+computed n=10000000
+computed n=20000000
+computed n=30000000
+computed n=40000000
+computed n=50000000
+
+Direct trace verification:
+N=50000000
+Q(1)=1
+Q(2)=1
+Q(N)=25864625
+min_arg_seen=2
+max_arg_seen=25864602
+min_backward_gap_seen=1
+max_q_seen=25864625
+undefined_bad=0
+non_backward_bad=0
+elapsed_seconds=0.16
+
+RESULT: VERIFIED BASE TRACE
