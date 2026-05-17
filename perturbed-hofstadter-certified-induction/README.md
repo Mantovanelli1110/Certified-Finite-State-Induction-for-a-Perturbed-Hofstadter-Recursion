@@ -507,6 +507,4 @@ See `CITATION.cff` for how to cite this artifact.
 
 If you use this repository, please cite both the paper and the archived
 repository release.
-## Citation
 
-See `CITATION.cff` for how to cite this artifact.
