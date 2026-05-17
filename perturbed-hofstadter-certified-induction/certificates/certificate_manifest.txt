@@ -1,0 +1,35 @@
+Main certificate artifact
+
+Compressed file:
+certificate.txt.zst
+
+Uncompressed file:
+certificate.txt
+
+Compressed size:
+256 MiB
+
+Uncompressed size:
+2.8 GiB
+
+Purpose:
+Finite symbolic and arithmetic certificate used by the verification
+programs.
+
+Required by:
+- cycle_composition_factor_checker
+- coverage_anchor_checker
+- well_definedness_induction_checker
+- faithfulness_checker
+
+Archive location:
+<Zenodo DOI or release URL here>
+
+SHA256 compressed:
+<PASTE HASH OF certificate.txt.zst HERE>
+
+SHA256 uncompressed:
+<PASTE HASH OF certificate.txt HERE>
+
+Decompression:
+zstd -d certificate.txt.zst -o certificate.txt
