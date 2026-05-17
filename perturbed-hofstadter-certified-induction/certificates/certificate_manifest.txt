@@ -26,10 +26,10 @@ Archive location:
 <Zenodo DOI or release URL here>
 
 SHA256 compressed:
-<PASTE HASH OF certificate.txt.zst HERE>
+DA73A39B60018665F20875C4DBD7F9D03E9C7397F355F21166B1FAE6031C64E6
 
 SHA256 uncompressed:
-<PASTE HASH OF certificate.txt HERE>
+F5F38BE00226D3B6A2B1E162CB9687BF0CF6FF27DBC99B575B2F32887F90E1EE
 
 Decompression:
 zstd -d certificate.txt.zst -o certificate.txt
