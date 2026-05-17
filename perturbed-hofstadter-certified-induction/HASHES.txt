@@ -1,0 +1,10 @@
+# SHA256 hashes for reproducibility
+
+Generated on: 2026-05-17 14:30:00
+
+DA73A39B60018665F20875C4DBD7F9D03E9C7397F355F21166B1FAE6031C64E6  certificates\certificate.txt.zst
+F5F38BE00226D3B6A2B1E162CB9687BF0CF6FF27DBC99B575B2F32887F90E1EE  certificates\certificate.txt
+<sha256_hash_of_induction_log>  logs\well_definedness_induction_checker.log
+<sha256_hash_of_faithfulness_log>  logs\faithfulness_checker.log
+<sha256_hash_of_coverage_log>  logs\coverage_anchor_checker.log
+<sha256_hash_of_factor_log>  logs\cycle_composition_factor_checker.log
