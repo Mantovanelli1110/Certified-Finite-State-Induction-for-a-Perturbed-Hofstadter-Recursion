@@ -8,7 +8,8 @@ $DiagLogDir = Join-Path $LogDir "diagnostic"
 New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
 New-Item -ItemType Directory -Force -Path $DiagLogDir | Out-Null
 
-# Certificate files
+# Word certificate files.
+# These paths assume the files are in the repository root.
 $S = Join-Path $Root "s_certificate.txt"
 $T = Join-Path $Root "t_certificate.txt"
 $U = Join-Path $Root "u_certificate.txt"
@@ -46,14 +47,13 @@ Require-File $MainCert
 Write-Host "Checking required binaries..."
 
 $TraceGen = Require-Bin "trace_generator.exe"
-$CComp    = Require-Bin "ccomp.exe"
-$CFactor  = Require-Bin "cfactor.exe"
-$CAnchor  = Require-Bin "canchor.exe"
-$WCheck   = Require-Bin "wcheck.exe"
-$Faith    = Require-Bin "faithcheck.exe"
+$CComp    = Require-Bin "cycle_composition_checker.exe"
+$CFactor  = Require-Bin "cycle_composition_factor_checker.exe"
+$CAnchor  = Require-Bin "coverage_anchor_checker.exe"
+$WCheck   = Require-Bin "well_definedness_induction_checker_v2.exe"
+$Faith    = Require-Bin "faithfulness_checker.exe"
 
-# Optional diagnostic checker
-$CPattern = Join-Path $BinDir "cpattern.exe"
+$CPattern = Join-Path $BinDir "cycle_composition_pattern_checker.exe"
 
 Write-Host "Running trace generator..."
 cmd /c "`"$TraceGen`" 50000000 > `"$LogDir\trace_generation.log`" 2>&1"
