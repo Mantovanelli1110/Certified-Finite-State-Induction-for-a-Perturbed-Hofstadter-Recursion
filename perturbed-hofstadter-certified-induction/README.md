@@ -164,11 +164,11 @@ The main C programs are located in `src/`.
 
 ## Certificate format
 
-The main certificate is stored in
+After downloading and decompressing the large certificate artifact, the
+main certificate is expected at:
 
 ```text
 certificates/certificate.txt
-```
 
 The certificate contains finite data used by the proof checkers. The main
 sections are:
@@ -283,6 +283,67 @@ ra < 0
 rb < 0
 ```
 
+---
+
+## Large certificate artifact
+
+The main certificate file is not stored directly in this Git repository,
+because the uncompressed file is approximately 2.8 GiB. The compressed
+certificate artifact is archived on Zenodo:
+
+https://doi.org/10.5281/zenodo.20258943
+
+The archived files are:
+
+- `certificate.txt.zst`
+- `certificate_manifest.txt`
+- `HASHES.txt`
+
+The main compressed artifact is:
+
+```text
+certificate.txt.zst
+```
+
+To reproduce the full verification, download `certificate.txt.zst` from
+the Zenodo record and place it in:
+
+```text
+certificates/certificate.txt.zst
+```
+
+Then decompress it to:
+
+```text
+certificates/certificate.txt
+```
+
+using:
+
+```bash
+zstd -d certificates/certificate.txt.zst -o certificates/certificate.txt
+```
+
+On Windows PowerShell, if `zstd` is available:
+
+```powershell
+zstd -d certificates\certificate.txt.zst -o certificates\certificate.txt
+```
+
+The expected SHA256 hashes of the compressed and uncompressed certificate
+are recorded in:
+
+```text
+HASHES.txt
+certificates/certificate_manifest.txt
+```
+
+The large certificate files themselves are intentionally excluded from
+Git by `.gitignore`.
+
+The repository therefore contains the source code, scripts, logs,
+manifest, and hashes, while the large certificate artifact is archived
+separately on Zenodo for reproducibility.
 ---
 
 ## Reproducibility workflow
