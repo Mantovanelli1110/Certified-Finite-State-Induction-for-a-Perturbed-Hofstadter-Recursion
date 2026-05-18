@@ -1,37 +1,85 @@
 $ErrorActionPreference = "Stop"
 
 $Root = Resolve-Path (Join-Path $PSScriptRoot "..")
-$LogDir = Join-Path $Root "logs"
 $BinDir = Join-Path $Root "bin"
-$CertDir = Join-Path $Root "certificates"
-$TimeStamp = (Get-Date).ToUniversalTime().ToString("yyyyMMddTHHmmssZ")
-$RunLog = Join-Path $LogDir ("run_all_checks_" + $TimeStamp + ".log")
+$LogDir = Join-Path $Root "logs"
+$DiagLogDir = Join-Path $LogDir "diagnostic"
 
 New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
+New-Item -ItemType Directory -Force -Path $DiagLogDir | Out-Null
 
-& (Join-Path $PSScriptRoot "build_windows.ps1") | Tee-Object -FilePath $RunLog
+# Certificate files
+$S = Join-Path $Root "s_certificate.txt"
+$T = Join-Path $Root "t_certificate.txt"
+$U = Join-Path $Root "u_certificate.txt"
+$V = Join-Path $Root "v_certificate.txt"
 
-$Bins = Get-ChildItem -Path $BinDir -File -ErrorAction SilentlyContinue
-if (-not $Bins) {
-    "No binaries found in $BinDir. Exiting." | Tee-Object -FilePath $RunLog -Append
-    exit 0
-}
+# If your word certificates are under certificates\, replace the four lines above by:
+# $S = Join-Path $Root "certificates\s_certificate.txt"
+# $T = Join-Path $Root "certificates\t_certificate.txt"
+# $U = Join-Path $Root "certificates\u_certificate.txt"
+# $V = Join-Path $Root "certificates\v_certificate.txt"
 
-$Certs = Get-ChildItem -Path $CertDir -File -ErrorAction SilentlyContinue
-if (-not $Certs) {
-    "No certificate files found in $CertDir. Running checkers without certificate arguments." | Tee-Object -FilePath $RunLog -Append
-    foreach ($Bin in $Bins) {
-        "=== Running $($Bin.Name) ===" | Tee-Object -FilePath $RunLog -Append
-        & $Bin.FullName 2>&1 | Tee-Object -FilePath $RunLog -Append
-    }
-    exit 0
-}
+$MainCert = Join-Path $Root "certificates\certificate.txt"
 
-foreach ($Bin in $Bins) {
-    foreach ($Cert in $Certs) {
-        "=== Running $($Bin.Name) on $($Cert.Name) ===" | Tee-Object -FilePath $RunLog -Append
-        & $Bin.FullName $Cert.FullName 2>&1 | Tee-Object -FilePath $RunLog -Append
+function Require-File($Path) {
+    if (-not (Test-Path $Path)) {
+        throw "Required file not found: $Path"
     }
 }
 
-"Run complete: $RunLog" | Tee-Object -FilePath $RunLog -Append
+function Require-Bin($Name) {
+    $Path = Join-Path $BinDir $Name
+    if (-not (Test-Path $Path)) {
+        throw "Required binary not found: $Path"
+    }
+    return $Path
+}
+
+Write-Host "Checking required certificate files..."
+Require-File $S
+Require-File $T
+Require-File $U
+Require-File $V
+Require-File $MainCert
+
+Write-Host "Checking required binaries..."
+
+$TraceGen = Require-Bin "trace_generator.exe"
+$CComp    = Require-Bin "ccomp.exe"
+$CFactor  = Require-Bin "cfactor.exe"
+$CAnchor  = Require-Bin "canchor.exe"
+$WCheck   = Require-Bin "wcheck.exe"
+$Faith    = Require-Bin "faithcheck.exe"
+
+# Optional diagnostic checker
+$CPattern = Join-Path $BinDir "cpattern.exe"
+
+Write-Host "Running trace generator..."
+cmd /c "`"$TraceGen`" 50000000 > `"$LogDir\trace_generation.log`" 2>&1"
+
+Write-Host "Running cycle composition checker..."
+cmd /c "`"$CComp`" `"$S`" S `"$T`" T `"$U`" U `"$V`" V 28 53 > `"$LogDir\cycle_composition_checker.log`" 2>&1"
+
+Write-Host "Running cycle composition factor checker..."
+cmd /c "`"$CFactor`" `"$S`" S `"$T`" T `"$U`" U `"$V`" V 28 > `"$LogDir\cycle_composition_factor_checker.log`" 2>&1"
+
+Write-Host "Running coverage anchor checker..."
+cmd /c "`"$CAnchor`" `"$S`" `"$T`" `"$U`" `"$V`" 28 > `"$LogDir\coverage_anchor_checker.log`" 2>&1"
+
+Write-Host "Running well-definedness induction checker..."
+cmd /c "`"$WCheck`" `"$MainCert`" > `"$LogDir\well_definedness_induction_checker.log`" 2>&1"
+
+Write-Host "Running faithfulness checker..."
+cmd /c "`"$Faith`" `"$MainCert`" > `"$LogDir\faithfulness_checker.log`" 2>&1"
+
+if (Test-Path $CPattern) {
+    Write-Host "Running diagnostic pattern checker..."
+    cmd /c "`"$CPattern`" `"$S`" S `"$T`" T `"$U`" U `"$V`" V 28 53 > `"$DiagLogDir\cycle_composition_pattern_checker.log`" 2>&1"
+} else {
+    Write-Host "Diagnostic pattern checker not found; skipping."
+}
+
+Write-Host ""
+Write-Host "All checks finished. Logs are in:"
+Write-Host $LogDir
