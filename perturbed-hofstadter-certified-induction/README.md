@@ -169,6 +169,7 @@ main certificate is expected at:
 
 ```text
 certificates/certificate.txt
+```
 
 The certificate contains finite data used by the proof checkers. The main
 sections are:
@@ -344,6 +345,7 @@ Git by `.gitignore`.
 The repository therefore contains the source code, scripts, logs,
 manifest, and hashes, while the large certificate artifact is archived
 separately on Zenodo for reproducibility.
+
 ---
 
 ## Reproducibility workflow
