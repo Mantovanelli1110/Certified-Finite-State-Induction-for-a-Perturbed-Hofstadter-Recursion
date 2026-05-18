@@ -140,7 +140,7 @@ The main C programs are located in `src/`.
 
 ### Arithmetic, parity, and faithfulness verification
 
-- `well_definedness_induction_checker.c`
+- `well_definedness_induction_checker_v2.c`
 
   Verifies the arithmetic induction certificate. It checks:
 
