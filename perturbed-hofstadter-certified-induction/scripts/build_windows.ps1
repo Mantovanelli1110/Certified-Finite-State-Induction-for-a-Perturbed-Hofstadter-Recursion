@@ -13,12 +13,23 @@ if (-not $Sources) {
 }
 
 $CC = if ($env:CC) { $env:CC } else { "gcc" }
-$CFlags = if ($env:CFLAGS) { $env:CFLAGS } else { "-O2 -Wall -Wextra -std=c11" }
+
+if ($env:CFLAGS) {
+    $CFlags = $env:CFLAGS -split '\s+'
+} else {
+    $CFlags = @("-O2", "-Wall", "-Wextra", "-std=c11")
+}
 
 foreach ($File in $Sources) {
     $Out = Join-Path $Bin ($File.BaseName + ".exe")
-    Write-Host "Building $($File.Name)"
-    & $CC $CFlags $File.FullName -o $Out
+
+    Write-Host "Building $($File.Name) -> $Out"
+
+    & $CC @CFlags $File.FullName -o $Out
+
+    if ($LASTEXITCODE -ne 0) {
+        throw "Build failed for $($File.Name)"
+    }
 }
 
 Write-Host "Build complete. Binaries are in $Bin"
